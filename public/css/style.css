@@ -1,0 +1,13 @@
+body{
+    background-color: #fffd74;
+}
+
+input{
+    background-color: gray;
+    border-color: gray;
+    color: blue;
+}
+
+button{
+    background-color: purple;
+}

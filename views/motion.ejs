@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animesta</title>
+    <link rel="stylesheet" href="/css/style.css"
+</head>
+<body>
+
+    <form action="/send" method="POST">
+
+    <p>Quotes:<input type="number" name="quotes" placeholder="10"> </p>
+
+    <br/>
+
+    <button type="submit">Submit</button>
+
+    </form>
+
+    <% if(no){ %>
+        <H1>hERE are your quote s of awesomeness</H1>
+
+    <% for(let i=0;i<no;i++){ %>
+        <h4><%= (i+1)+"."+data[i].quote %></h4>
+        <h6>&nbsp;&nbsp;&nbsp;By: <%= data[i].character %></h6>
+        <% } %>
+        <% } %>
+
+</body>
+</html>

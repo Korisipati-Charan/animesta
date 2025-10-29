@@ -55,6 +55,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Home page route
 app.get("/", (req, res) => {
+  response = shuffleArray(response);
   // Use Math.min to ensure we never try to slice more quotes than we have (max 100)
   const count = Math.min(num, response.length);
   const datum = response.slice(0, count);
